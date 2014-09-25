@@ -1,0 +1,10 @@
+#############################################
+# Basic constants
+#############################################
+
+themes {
+  configuration {
+    # cat=theme; type=string; label= Siteslogan
+    siteSlogan = Slogan Casual Business Theme
+  }
+}

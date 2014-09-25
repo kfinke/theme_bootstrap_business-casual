@@ -1,0 +1,59 @@
+/*!
+ * Start Bootstrap - Business Casual Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.navbar-default .navbar-nav {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+    > .active > a, > .active > a:hover, > .active > a:focus {
+        background-color: transparent;
+        color:#ffffff;
+    }
+}
+
+@media screen and (min-width:768px) {
+    #menuMain {    
+        .navbar {
+            border-radius: 0;
+        }
+
+        .navbar-header {
+            display: none;
+        }
+
+        .navbar {
+            min-height: 0;
+        }
+
+        .navbar-default {
+            border: none;
+            background: #fff;
+            background: rgba(255,255,255,0.9);
+        }
+
+        .nav>li>a {
+            padding: 35px;
+        }
+
+        .navbar-nav>li>a {
+            line-height: normal;
+        }
+
+        .navbar-nav {
+            display: table;
+            float: none;
+            margin: 0 auto;
+            table-layout: fixed;
+            font-size: 1.25em;
+        }
+    }
+}

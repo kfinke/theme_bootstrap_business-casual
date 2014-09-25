@@ -1,0 +1,69 @@
+# Name and description of the theme (required)
+title            : Inherit from theme_bootstrap
+description      : |
+  This is the description of the theme.
+  With the starting pipe it can contain multiple lines.
+
+  The newlines in this description will be preserved.
+
+# Whether a documentation page is available (optional)
+#documentation:
+#  -
+#    url            : http://www.typo3-themes.org
+#    title          : TYPO3-Themes.org
+#
+# Whether a live demo is available (optional)
+#demoLocation:
+#  -
+#    url            : http://demo.typo3-themes.org
+#    title          : TYPO3-Themes.org Demo
+
+# Keywords (optional)
+keywords:
+  - html5boilerplate
+  - responsive design
+
+# Constants categories which are used for constants in this theme
+constants:
+  availableCategories: [theme,colors,font,meta,metaDefaults,page,container,slider,lightbox]
+
+# Screenshots for the preview gallery (optional, multiple possible)
+screenshots:
+  -
+    file           :
+    caption        :
+
+# Name of the authors (optional, multiple possible)
+authors:
+  -
+    name           : Kerstin Finke
+    email          : info@kerstin-finke.de
+    company        : Kerstin Finke Web-Entwicklung
+    companyLogo    :
+    companyWebsite : www.kerstin-finke.de
+
+
+# Possible license if applicable (optional)
+# Pick on from http://creativecommons.org/choose/
+licenses:
+  -
+    license        : CC
+    licenseUri     :
+    # resources is an optional node here
+    resources      :
+      - Images
+      - HTML
+  -
+    license        : whatever
+    licenseUri     :
+    resources      :
+      - Resources/Public/Images/logo.png
+
+# Supported Extensions
+supportedExtensions:
+  news:
+    version        : 1.0.0
+    description    : News-Extension
+  #felogin:
+  #  version        : 6.2.0
+  #  description    : Frontend-User login

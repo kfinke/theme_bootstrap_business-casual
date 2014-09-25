@@ -1,0 +1,15 @@
+#############################################
+# Basic constants
+#############################################
+
+themes {
+  configuration {
+    colors {
+        # cat=colors; type=string; label=Link-background-Color
+        link-bg-color = yellow
+
+        # cat=colors; type=string; label=Link-hover-Color
+        link-hover-color = #ff00ff
+    }
+  }
+}
