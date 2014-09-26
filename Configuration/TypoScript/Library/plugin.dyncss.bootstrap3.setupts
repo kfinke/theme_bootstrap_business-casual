@@ -1,5 +1,0 @@
-plugin.tx_dyncss.overrides {
-	link-hover-color = TEXT
-	link-hover-color.value = {$themes.configuration.colors.link-hover-color}
-
-}

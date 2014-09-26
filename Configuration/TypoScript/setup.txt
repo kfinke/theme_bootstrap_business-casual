@@ -1,11 +1,16 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_business-casual/Configuration/TypoScript/Library" extensions="setupts">
 
+########### ACHTUNG NUR ZUR ENTWICKLUNG ############
+config.no_cache = 1
+
 page {
     includeCSS {
-	bootstrap = EXT:theme_bootstrap/Resources/Public/Contrib/bootstrap-3.1.1/less/bootstrap.less
+	bootstrap > 
+        #= EXT:theme_bootstrap/Resources/Public/Contrib/bootstrap-3.1.1/less/bootstrap.less
         business-casual = EXT:theme_bootstrap_business-casual/Resources/Private/Dyncss/import.less
-      #  theme >
+        # delete less-files from bootstrap-theme
+        theme >
         fonts_opensans = http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800
         fonts_opensans.external = 1
         fonts_opensans.excludeFromConcatenation = 1
@@ -30,3 +35,4 @@ plugin.tx_themebootstrap {
  		}
  	}
  }
+

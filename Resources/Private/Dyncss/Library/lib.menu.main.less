@@ -10,13 +10,21 @@
     letter-spacing: 2px;
 }
 
-.navbar-default .navbar-nav {
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: 3px;
-    > .active > a, > .active > a:hover, > .active > a:focus {
-        background-color: transparent;
-        color:#ffffff;
+#menuMain {
+    .navbar-default .navbar-nav {
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 3px;
+         > li > a {
+           color:@brand-primary;
+        }
+        > .active > a, > .active > a:hover, > .active > a:focus {
+            background-color: transparent;
+            color:#000;
+        }
+    }    
+    .navbar-default .navbar-nav > li > a {
+           color:@brand-primary;    
     }
 }
 

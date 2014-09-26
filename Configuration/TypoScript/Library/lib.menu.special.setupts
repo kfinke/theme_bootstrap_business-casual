@@ -1,0 +1,14 @@
+####################
+# Menu
+#
+#
+# main
+lib.menu.special.1.IFSUB.doNotLinkIt = 0
+lib.menu.special.1.ACTIFSUB.doNotLinkIt = 0
+lib.menu.special.wrap    = <ul class="nav navbar-nav col-md-12"> | </ul>
+lib.menu.special.1.NO.wrapItemAndSub = <li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} first col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} middle col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-no uid-{field:uid} point-{register:count_MENUOBJ} last col-md-3 col-sm-6 col-xs-12">|</li>
+lib.menu.special.1.ACT.wrapItemAndSub = <li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} first col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} middle col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-act active uid-{field:uid} point-{register:count_MENUOBJ} last col-md-3 col-sm-6 col-xs-12">|</li>
+lib.menu.special.1.IFSUB.wrapItemAndSub = <li class="state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} first col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} middle col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} last col-md-3 col-sm-6 col-xs-12">|</li>
+lib.menu.special.1.ACTIFSUB.wrapItemAndSub = <li class="state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} first col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} middle col-md-3 col-sm-6 col-xs-12">|</li>|*|<li class="state-ifsub uid-{field:uid} point-{register:count_MENUOBJ} last col-md-3 col-sm-6 col-xs-12">|</li>
+				
+		

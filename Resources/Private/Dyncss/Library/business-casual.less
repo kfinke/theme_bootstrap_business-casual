@@ -4,6 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+.container {
+    background-color:#fff;
+}
+
+header .container {
+    background-color:transparent;
+}
+
+
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
     background: url('@{baseurlImage}bg.jpg') no-repeat center center fixed;
@@ -23,6 +32,17 @@ h6 {
     font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+h3 {
+    padding:20px;
+    text-align:center;
+    &:before, &:after {
+        content:" ";
+        display:block;
+        border-top:1px solid #999999;
+        margin:1em 5em;
+    }
 }
 
 p {
@@ -88,6 +108,14 @@ hr {
 
 @media screen and (min-width:768px) {
 
+    h3 {
+        &:before, &:after {
+            content:" ";
+            display:block;
+            border-top:1px solid #999999;
+            margin:1em 15em;
+        }
+    }
     .top-divider {
         margin-top: 0;
     }
@@ -97,18 +125,6 @@ hr {
         margin-right: 25px;
     }
 
-    .address-bar {
-        display: inherit;
-        margin: 0;
-        padding: 0 0 40px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        text-transform: uppercase;
-        font-size: 1.25em;
-        font-weight: 400;
-        letter-spacing: 3px;
-        color: #fff;
-    }
 
 
 }

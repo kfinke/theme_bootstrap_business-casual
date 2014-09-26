@@ -1,0 +1,9 @@
+# Additional Content-Layouts
+#############################################
+TCEFORM.tt_content {
+    layout {
+        addItems {
+            2000 = white-box
+        }
+    }
+}

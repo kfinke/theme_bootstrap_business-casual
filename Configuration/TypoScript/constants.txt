@@ -10,3 +10,5 @@ themes {
         }
     }
 }
+
+themes.configuration.menu.main.excludeUidList = 89

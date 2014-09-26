@@ -1,0 +1,10 @@
+# Additional Content-Layouts
+#############################################
+tt_content.stdWrap.innerWrap.cObject.default.20.40 = CASE
+tt_content.stdWrap.innerWrap.cObject.default.20.40 {
+    key.field = layout
+
+    # white box
+    2000 = TEXT
+    2000.value = box
+}

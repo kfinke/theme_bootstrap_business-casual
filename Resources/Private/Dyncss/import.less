@@ -1,7 +1,20 @@
+
+@import "Library/Variables/bootstrap_3.1.1_variables.less";
+@import "Library/bootstrap.less";
+
 // Wert @baseurlImage wird ueberschrieben in Theme-Konstanten
 @baseurlImage:'typo3conf/ext/themes_bootstrap_business-casual/Resources/Public/Images/';
-@import url(Library/business-casual.less);
 
+@brand-primary: red;
+@link-color: #ff00ff;
 
 //** Link hover color set via `darken()` function.
 @link-hover-color:      darken(@link-color, 15%);
+@link-bg-color: red;
+
+
+@import url(Library/area.footer.less);
+@import url(Library/area.header.less);
+@import url(Library/lib.menu.main.less);
+@import url(Library/business-casual.less);
+

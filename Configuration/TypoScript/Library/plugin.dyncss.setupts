@@ -1,0 +1,9 @@
+plugin.tx_dyncss.overrides {
+        brand-primary = TEXT
+        brand-primary.value = {$themes.configuration.colors.primary}
+        link-bg-color = TEXT
+        link-bg-color.value = {$themes.configuration.colors.link-bg-color}
+	link-hover-color = TEXT
+	link-hover-color.value = {$themes.configuration.colors.link-hover-color}
+
+}
