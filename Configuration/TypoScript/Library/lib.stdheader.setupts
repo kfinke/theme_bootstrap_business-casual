@@ -1,0 +1,23 @@
+#allow <strong>-Tag in headline
+lib.stdheader.10.setCurrent.htmlSpecialChars = 0
+lib.stdheader.10.setCurrent.parseFunc {
+    allowTags = strong
+    # Alle Tags verbieten, abgesehen von den explizit erlaubten
+    denyTags = *
+    constants=1
+    nonTypoTagStdWrap.HTMLparser = 1
+    nonTypoTagStdWrap.HTMLparser {
+        keepNonMatchedTags=1
+        htmlSpecialChars = 2
+        allowTags = u
+        removeTags = *
+    }
+}
+#lib.stdheader.20.1.wrap = <h2 class="intro-text text-center">|</h2>
+lib.stdheader.10.2.dataWrap = <hr><h2{register:headerClass}>|</h2><hr>
+lib.stdheader.3.headerClass.cObject.20.value = intro-text text-center
+lib.stdheader.3.headerClass.cObject.20.if >
+
+
+#delete csc-header...
+lib.stdheader.stdWrap.dataWrap >

@@ -1,13 +1,35 @@
 {namespace theme=KayStrobach\Themes\ViewHelpers}
 <!-- theme_bootstrap_business-casual: Layouts/Default.html [begin] -->
-<div id="layoutDefault">
+<div id="layoutDefault" xmlns:f="http://www.w3.org/1999/html">
         <!-- Top Bar -->
         <header id="topBar">
                 <div class="container">
-
-                        <div class="pull-right fsize13 margin-top10 hide_mobile">
-                            <f:render partial="Socialmedia/List" section="Default" />
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="menu-language-wrapper pull-left">
+                                    <theme:widget.languageMenu
+                                            availableLanguages="{theme:constant(constant: 'themes.languages.available')}"
+                                            currentLanguageUid="{theme:constant(constant: 'themes.languages.current.uid')}"
+                                            defaultLanguageIsoCodeShort="{theme:constant(constant: 'themes.languages.default.isoCodeShort')}"
+                                            defaultLanguageLabel="{theme:constant(constant: 'themes.languages.default.label')}"
+                                            defaultLanguageFlag="{theme:constant(constant: 'themes.languages.default.flag')}"
+                                            />
+                                    <f:comment>
+                                        <f:if condition="{theme:constant(constant: 'themes.languages.available')}">
+                                        <span>
+                                           <f:translate key="languageMenu_label" />
+                                        </span>
+                                        </f:if>
+                                    </f:comment>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="pull-right fsize13 margin-top10 hide_mobile">
+                                    <f:render partial="Socialmedia/List" section="Default" />
+                                </div>
+                            </div>
                         </div>
+
 
                 </div><!-- /.container -->
         </header>
@@ -42,8 +64,18 @@
             </nav>
         </div>
 
-        <div class="container">
-
+        <div id="content" class="container">
+            <div id="menuBreadcrumbWrapper">
+                <span><f:translate key="breadcrumb_label" /></span>
+                <f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
+            </div>
+            <!--<main id="areaMain" class="row">
+                <div id="menuBreadcrumbWrapper">
+                    <span><f:translate key="breadcrumb_label" /></span>
+                    <f:cObject typoscriptObjectPath="lib.menu.breadcrumb" />
+                </div>
+                <f:render section="Default" />
+            </main>-->
            <f:cObject typoscriptObjectPath="lib.content.main" />
 
         </div>

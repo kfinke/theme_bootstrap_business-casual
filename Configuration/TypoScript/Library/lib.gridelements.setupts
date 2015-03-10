@@ -1,0 +1,18 @@
+lib.gridelements.threeColumnGrid.stdWrap.dataWrap = <div id="c{field:uid}" class="row {field:flexform_visibility_md} {field:flexform_visibility_xs} {field:flexform_visibility_sm} {field:flexform_visibility_lg} {field:flexform_equalheight_md} {field:flexform_equalheight_sm} {field:flexform_equalheight_xs} {field:flexform_equalheight_lg}"><div class="box">|</div></div>
+lib.gridelements.threeColumnGrid.stdWrap.innerWrap.cObject.stdWrap.dataWrap = <div class="row {field:flexform_equalheight_md} {field:flexform_equalheight_sm} {field:flexform_equalheight_xs} {field:flexform_equalheight_lg}"><div class="box">|</div></div>
+tt_content.gridelements_pi1.20.10.setup.threeColumnGrid.stdWrap.dataWrap = <div id="c{field:uid}" class="row {field:flexform_visibility_md} {field:flexform_visibility_xs} {field:flexform_visibility_sm} {field:flexform_visibility_lg} {field:flexform_equalheight_md} {field:flexform_equalheight_sm} {field:flexform_equalheight_xs} {field:flexform_equalheight_lg}"><div class="box">|</div></div>
+
+lib.gridelements.carousel.cObject.file = EXT:theme_bootstrap_business-casual/Resources/Private/Templates/Elements/Carousel.html
+tt_content.gridelements_pi1.20.10.setup.carousel.cObject.file = EXT:theme_bootstrap_business-casual/Resources/Private/Templates/Elements/Carousel.html
+
+lib.gridelements.tabs.cObject.file = EXT:theme_bootstrap_business-casual/Resources/Private/Templates/Elements/Tabs.html
+tt_content.gridelements_pi1.20.10.setup.tabs.cObject.file = EXT:theme_bootstrap_business-casual/Resources/Private/Templates/Elements/Tabs.html
+
+#lib.gridelements.fourColumnGrid.outerWrap.stdWrap.noTrimWrap = |<div id="c{field:uid}" class="row ||
+
+#lib.gridelements.defaultGridSetup.innerWrap.cObject.default.wrap = <div class="row"><div class="box">|</div></div>
+#tt_content.gridelements_pi1.20.10.setup.carousel.cObject.wrap = <div class="row"><div class="box">|</div></div>
+#tt_content.bootstrap_package_carousel.20.wrap = <div class="row"><div class="box">|</div></div>
+
+#tt_content.gridelements_pi1.20.10.setup.carousel.cObject.file = EXT:theme_bootstrap_business-casual/Resources/Private/Templates/Bootstrap/Carousel.html
+#tt_content.gridelements_pi1.20.10.setup.carousel.cObject.file >

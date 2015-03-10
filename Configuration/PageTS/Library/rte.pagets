@@ -1,0 +1,76 @@
+
+
+In the Page TSConfig on the root page I have the following code:
+
+/////////////////////////////////////////////////////////////
+//    RTE
+/////////////////////////////////////////////////////////////
+RTE.classes{
+  highlight{
+      name = highlight
+      value = color:#636466; font-size:15px;
+  }
+  brown{
+      name = braun
+      value = color:#9A3811;
+  }
+}
+
+RTE.default{
+  ignoreMainStyleOverride = 1
+  useCSS = 1
+  contentCSS = fileadmin/templates/css/rte.css
+  classesCharacter := addToList(highlight, brown)
+  classesParagraph := addToList(highlight, brown)
+  proc.allowedClasses := addToList(highlight, brown)
+  showTagFreeClasses = 1
+}
+
+In my rte.css I have this:
+
+/* content of rte.css */
+
+.highlighthighlight {
+    font-size: 15px;
+    color: #636466;
+}
+
+.brown {
+    color: #9A3811;
+}
+
+The same style is in style.css for the frontend. If I'm in the editor I cannot choose a text style. It is always disabled. I want to mark some words in a paragraph. I tried to use different browsers (IE, FF, Opera ...) but in all of them text style is disabled. What can I do?
+
+I have Typo3 4.7.5
+
+EDIT
+
+The problem was due to deprecated properties (see here)). My current code looks like
+
+/////////////////////////////////////////////////////////////
+//    RTE
+/////////////////////////////////////////////////////////////
+RTE.default{
+  ignoreMainStyleOverride = 1
+  useCSS = 1
+  contentCSS = fileadmin/templates/css/rte.css
+  proc.allowedClasses := addToList(highlight, brown)
+  buttons {
+    blockstyle.tags.div.allowedClasses := addToList(highlight, brown)
+    textstyle.tags.span.allowedClasses := addToList(highlight, brown)
+  }
+  showTagFreeClasses = 1
+}
+
+RTE.classes{
+  brand-before {
+      name = brand-before
+      value = color:#636466; font-size:15px;
+  }
+  brand-name {
+      name = name
+      value = color:#9A3811;
+  }
+}
+
+

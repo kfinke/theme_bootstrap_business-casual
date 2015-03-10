@@ -5,5 +5,6 @@ plugin.tx_dyncss.overrides {
         link-bg-color.value = {$themes.configuration.colors.link-bg-color}
 	link-hover-color = TEXT
 	link-hover-color.value = {$themes.configuration.colors.link-hover-color}
-
+    icon-font-path = TEXT
+    icon-font-path.value = '{$themes.configuration.icon-font-path}'
 }

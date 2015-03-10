@@ -1,0 +1,5 @@
+lib.gridelements.carousel {
+	wrap = <div class="row"><div class="box carousel">|</div></div>
+}
+
+tt_content.gridelements_pi1.20.10.setup.carousel < lib.gridelements.carousel

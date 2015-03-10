@@ -1,12 +1,13 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap/Configuration/TypoScript/setup.txt">
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:theme_bootstrap_business-casual/Configuration/TypoScript/Library" extensions="setupts">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:theme_bootstrap_business-casual/Resources/Private/Extensions/News/TypoScript/setup.txt">
 
-########### ACHTUNG NUR ZUR ENTWICKLUNG ############
+########### ACHTUNG NUR ZUR ENTWICKLUNG Cache abschalten ############
 config.no_cache = 1
 
 page {
     includeCSS {
-	bootstrap > 
+	    bootstrap >
         #= EXT:theme_bootstrap/Resources/Public/Contrib/bootstrap-3.1.1/less/bootstrap.less
         business-casual = EXT:theme_bootstrap_business-casual/Resources/Private/Dyncss/import.less
         # delete less-files from bootstrap-theme
